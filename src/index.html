@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <section id="lifeimage">
+            <h1 class="titulo"> @Marlyslife</h1>
+            <figure>
+                <img src="./img/marlys-i.jpg" alt="">
+            </figure>
+
+            <div class="box">
+                <nav>
+                    <button id="comprar" class="buton" onclick="mostrarValidator()"> Comprar E-Book recetas saludables</button><br>
+                    <a href="https://www.youtube.com/" target="_blank">Ir al canal de Youtube</a><br>
+                    <a href="https://t.me/joinchat/vs9uTR488AQwMzkx" target="_blank">Ir al canal de Telegram</a><br>
+                    <a href="#########" target="_blank">BLOG</a><br>
+                </nav>
+            </div>
+        </section>      
+
+        <div id="validator" class="box_card">
+                <div onclick="closeValidator()" class="close"><span>X</span></div>
+                <img src="./img/tarjeta-de-credito.png" alt="Imagen de tarjeta de cedito">
+                <label for="cardNumber">
+                    <span>Numero de tarjeta</span>
+                    <input name="numeroTarjeta" type="text" maxlength="18" id="cardNumber" placeholder="Enter your credit Card Number" required>
+                </label>
+                <label for="nameCard">
+                    <span>Nombre y Apellido
+                    </span> <input name="nameCard" id="nameCard" type="text" placeholder="Nombre y Apellido" required>
+                </label>
+                 <div id="mensaje"> </div>
+                <button class="buton" id="btn"> Comprar </button>
+            </div>
+         
+         <div id="compraExitosa"> 
+         <h2> FELICIDADES POR TU COMPRA </h2>
+         <p> Tu compra con la tarjeta de credito numero <br> ha sido exitosa gracias por apoyar mi 
+         emprendimiento haz click en el siguiente enlace para descargar tu ebook de recetas saludable. </p>
+         <img src="./img/archivo-pdf.png" alt="Imagen descargar PDF">
+        </div>
+
+    </main>
+
+    <script src="index.js" type="text/javascript"> </script>
+    <script src="validator.js" type="text/javascript"> </script>
+
+</body>
+
 </html>

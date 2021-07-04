@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    background-color: #c67ed8;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(0deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    min-height: 100vh;
+}
+
+section.validator {
+    width: 100%;
+    height: 100vh;
+    background-color: #c1c1c1;
+    padding-top: 5rem
+}
+
+section h1 {
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem
+}
+
+figure {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 100%
+}
+
+figure img {
+    max-width: 100%;
+}
+
+.box {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.box a {
+    color: #FFF;
+    border: 2px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    width: 300px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.box a:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.buton {
+    color: #FFF;
+    border: 2px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #d80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    width: 375px;
+    margin: 0 auto;
+    background: transparent;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.buton:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+
+}
+
+.box input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: .5rem;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section.validator label {
+    display: block
+}
+
+section.validator label input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+
+.titulo {
+    margin: 0;
+    color: #D80286;
+    font-size: 2rem;
+
+}
+
+#validator {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background: rgb(255 255 255 / 90%);
+    height: 100%;
+}
+
+.box_card {
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px -2px rgba(0, 0, 0, 0.75);
+}
+
+.box_card img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.box_card label {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+.box_card label span {
+    margin-top: 10px;
+    display: block
+}
+
+.box_card input {
+    display: flex;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.box_card .buton {
+    background-color: #d80286;
+    width: 61%;
+    margin-top: 1rem;
+}
+
+.box_card .buton:hover {
+    box-shadow: inset 0 100px 0 0 #56183e;
+}
+
+.close {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #d80286;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    transition: all 1s ease-out;
+    right: 0;
+}
+
+.close span {
+    position: absolute;
+    left: 40%;
+    top: 24%;
+    ;
+}
+
+.close:hover {
+    background-color: #7f0f55;
+}
+
+/*media q*/
+@media(max-width:600px) {
+    .box_card {
+        width: 350px;
+    }
+
+    .box_card img {
+        width: 100px;
+    }
+
+    .buton {
+        width: 275px;
+    }
+
+    .box a {
+        width: 200px;
+    }
+}
