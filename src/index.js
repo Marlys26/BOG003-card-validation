@@ -1,24 +1,38 @@
-import validator from './validator.js';
+import validator from "./validator.js";
 
 //console.log(validator);
-//Funcion para mostrar mi pagina de compra
-//function mostrarValidator() {
-//let x = document.getElementById("validator");
-  //if (x.style.display === "none") {
-    //    x.style.display = "block";
-    //} else {
-      //  x.style.display = "block";
-    //}
-//}
 
-  //  function closeValidator() {
-    //let x = document.getElementById("validator");
-    //if (x.style.display === "block") {
-      //  x.style.display = "none";
-    //} else {
-      //   x.style.display = "none";
-    //}
-    //}
 document.getElementById("btn").addEventListener("click", () => {
-    validator.isValid(document.getElementById("cardNumber").value);
-    });
+  let creditCardNumber = document.getElementById("cardNumber").value;
+  let nameCard = document.getElementById("nameCard").value;
+  if (creditCardNumber == "") {
+    alert("DEBES INTRODUCIR UN NUMERO");
+    return document.getElementById("cardNumber").value;
+  }
+  if (nameCard == "") {
+    alert("DEBES INTRODUCIR TU NOMBRE Y APELLIDO");
+    return document.getElementById("nameCard").value;
+  }
+  validarTarjeta(creditCardNumber);
+  maskyCard(creditCardNumber);
+  nombreComprador(nameCard);
+});
+
+function validarTarjeta(creditCardNumber) {
+  let exitoso = validator.isValid(creditCardNumber);
+  if (exitoso === true) {
+    document.getElementById("validator").setAttribute("hidden", "");
+    document.getElementById("compraExitosa").removeAttribute("hidden");
+  } else {
+    document.getElementById("mensaje").innerHTML =
+      "Su tarjeta es invalida por favor verifiquela e intente nuevamente";
+  }
+}
+function maskyCard(creditCardNumber) {
+  document.getElementById("numberMaskify").innerHTML =
+    validator.maskify(creditCardNumber);
+}
+
+function nombreComprador(nameCard) {
+  document.getElementById("nameResul").innerHTML = nameCard;
+}
