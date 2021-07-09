@@ -4,9 +4,9 @@
 
 Es una landing page con links de rapido acceso para otras plataformas digitales y ademas podemos acceder a la compra de un articulo y vamos a implementar el algoritmo de lunh para la validación de la tarjeta de credito.
 
-<img src="./img/vista1.png" alt="Pagina principal"/>
-<img src="./img/vista2.png" alt="Pagina de validador de tarjeta"/>
-<img src="./img/vista3.png" alt="Pagina de compra exitosa"/>
+<img src="./src/img/vista1.png" alt="Pagina principal"/>
+<img src="./src/img/vista2.png" alt="Pagina de validador de tarjeta"/>
+<img src="./src/img/vista3.png" alt="Pagina de compra exitosa"/>
 
 ## Definicion del producto
 
@@ -25,7 +25,7 @@ La interfaz permite al usuario:
 - No debe poder ingresar un campo vacío, cuando el campo del numero esta vacio se muestra un alert
   indicandole a usuario que debe ingresar un numero de tarjeta e igualmente para el campo del nombre de usuario.
 
-<img src="./img/prototipopapel.png" alt="Prototipo en papel. "/>
+<img src="./src/img/prototipo-papel.jpeg" alt="Prototipo en papel. "/>
 
 ## Mejoras a realizar
 
@@ -35,4 +35,4 @@ La interfaz permite al usuario:
 
 ## Prototipo Final
 
-<img src="./img/prototipo.png" alt="Prototipo final. "/>
+<img src="./src/img/prototipo.png" alt="Prototipo final. "/>
